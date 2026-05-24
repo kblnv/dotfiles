@@ -1,0 +1,48 @@
+[init]
+	defaultBranch = main
+
+[user]
+	email = mkabalinov@gmail.com
+	name = Maksim Kabalinov
+
+[column]
+	ui = auto
+
+[branch]
+	sort= -committerdate
+
+[tag]
+	sort = version:refname
+
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+
+[push]
+	default = simple
+	autoSetupRemote = true
+	useForceIfIncludes = true
+
+[fetch]
+	prune = true
+	writeCommitGraph = true
+
+[help]
+	autocorrect = prompt
+
+[rerere]
+	enabled = true
+	autoupdate = true
+
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
+
+[alias]
+	# Overrides
+	xstash = stash --all
+	xclean = clean -fd
+
+	# Init helpful git tools
+	cleaner =!sh -xc 'git maintenance start && git config core.fsmonitor true'
