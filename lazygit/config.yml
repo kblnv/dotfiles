@@ -2,9 +2,12 @@ os:
   editPreset: 'vscode'
 
 gui:
+  nerdFontsVersion: "3"
+
+  showCommandLog: false 
   showFileTree: true
   showIcons: true
-  
+
 git:
   diffRenderers:
     - colorArg: always
