@@ -1,6 +1,11 @@
 os:
   editPreset: 'vscode'
+
+gui:
+  showFileTree: true
+  showIcons: true
+  
 git:
   diffRenderers:
     - colorArg: always
-      command: delta --paging=never
+      command: delta --dark --paging=never --line-numbers --hyperlinks
