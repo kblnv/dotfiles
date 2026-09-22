@@ -1,0 +1,6 @@
+os:
+  editPreset: 'vscode'
+git:
+  diffRenderers:
+    - colorArg: always
+      command: delta --paging=never
